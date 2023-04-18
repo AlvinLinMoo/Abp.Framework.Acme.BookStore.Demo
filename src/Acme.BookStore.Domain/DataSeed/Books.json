@@ -1,0 +1,18 @@
+{
+  "BookData": {
+    "Books": [
+      {
+        "Name": "1984",
+        "Type": "Dystopia",
+        "PublishDate": "6/8/1949 12:00:00 AM",
+        "Price": 19.84
+      },
+      {
+        "Name": "The Hitchhiker's Guide to the Galaxy",
+        "Type": "ScienceFiction",
+        "PublishDate": "9/27/1995 12:00:00 AM",
+        "Price": 42
+      }
+    ]
+  }
+}
