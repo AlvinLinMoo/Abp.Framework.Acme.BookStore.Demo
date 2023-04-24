@@ -12,6 +12,9 @@
     "Close": "Close",
     "Delete": "Delete",
     "Edit": "Edit",
+    // Login Page
+    "AdvantechSSOLogin": "Advantech SSO Login",
+    "LocalLogin": "Local Login",
     // Books
     "PublishDate": "Publish date",
     "NewBook": "New book",
