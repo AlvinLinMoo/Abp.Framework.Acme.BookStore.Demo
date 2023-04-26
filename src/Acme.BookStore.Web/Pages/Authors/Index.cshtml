@@ -8,10 +8,31 @@
 @inject IAuthorizationService AuthorizationService
 @model IndexModel
 
+<style>
+    .childTable thead tr th div {
+        height: 36.75px !important;
+    }
+</style>
+
 @section scripts
 {
     <abp-script src="/Pages/Authors/Index.js" />
 }
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+<style>
+    td.details-control {
+        background: url('/images/circle-plus-solid.svg') no-repeat center center;
+        background-size: 32px 32px; /* Set the size of the image to 16x16 pixels */
+        cursor: pointer;
+    }
+
+    tr.details td.details-control {
+        background: url('/images/circle-minus-solid.svg') no-repeat center center;
+        background-size: 32px 32px; /* Set the size of the image to 16x16 pixels */
+    }
+</style>
 
 <abp-card>
     <abp-card-header>
@@ -34,3 +55,9 @@
         <abp-table striped-rows="true" id="AuthorsTable"></abp-table>
     </abp-card-body>
 </abp-card>
+
+<template id="BooksTableTemplate">
+    <abp-card-body>
+        <abp-table striped-rows="true" id="BooksTable"></abp-table>
+    </abp-card-body>
+</template>

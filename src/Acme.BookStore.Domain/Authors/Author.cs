@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using Acme.BookStore.Books;
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace Acme.BookStore.Authors
         public string Name { get; private set; }
         public DateTime BirthDate { get; set; }
         public string ShortBio { get; set; }
+
+        public List<Book> Books { get; set; }
 
         private Author()
         {

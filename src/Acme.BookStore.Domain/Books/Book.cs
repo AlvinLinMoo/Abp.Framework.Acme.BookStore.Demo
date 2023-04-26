@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Acme.BookStore.Authors;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,5 +18,10 @@ namespace Acme.BookStore.Books
         public DateTime PublishDate { get; set; }
 
         public float Price { get; set; }
+
+        public Guid AuthorId { get; set; }
+
+        [ForeignKey(nameof(AuthorId))]
+        public Author Author { get; set; }
     }
 }

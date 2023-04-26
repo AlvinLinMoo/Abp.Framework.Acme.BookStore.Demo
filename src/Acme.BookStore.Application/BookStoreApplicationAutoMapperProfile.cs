@@ -17,5 +17,6 @@ public class BookStoreApplicationAutoMapperProfile : Profile
         CreateMap<Author, AuthorDto>().ReverseMap();
         CreateMap<Author, CreateAuthorDto>().ReverseMap();
         CreateMap<Author, UpdateAuthorDto>().ReverseMap();
+        CreateMap<Author, AuthorLookupDto>();
     }
 }

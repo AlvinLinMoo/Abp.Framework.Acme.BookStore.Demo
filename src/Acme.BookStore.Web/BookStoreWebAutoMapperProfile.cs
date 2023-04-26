@@ -13,5 +13,9 @@ public class BookStoreWebAutoMapperProfile : Profile
         CreateMap<Pages.Authors.CreateModalModel.CreateAuthorViewModel, CreateAuthorDto>().ReverseMap();
         CreateMap<Pages.Authors.EditModalModel.EditAuthorViewModel, AuthorDto>().ReverseMap();
         CreateMap<Pages.Authors.EditModalModel.EditAuthorViewModel, UpdateAuthorDto>().ReverseMap();
+
+        CreateMap<Pages.Books.CreateModalModel.CreateBookViewModel, CreateUpdateBookDto>().ReverseMap();
+        CreateMap<BookDto, Pages.Books.EditModalModel.EditBookViewModel>().ReverseMap();
+        CreateMap<Pages.Books.EditModalModel.EditBookViewModel, CreateUpdateBookDto>().ReverseMap();
     }
 }
