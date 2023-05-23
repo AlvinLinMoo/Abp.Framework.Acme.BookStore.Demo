@@ -1,5 +1,5 @@
 {
-    "culture": "zh-Hant",
+  "culture": "zh-Hant",
   "texts": {
     "Menu:Home": "首頁",
     "Welcome": "歡迎",
@@ -7,6 +7,16 @@
     "Menu:BookStore": "書店",
     "Menu:Books": "書集",
     "BookDeletionConfirmationMessage": "您確定要刪除這本書 '{0}'?",
-    "SuccessfullyDeleted": "刪除成功!"
+    "SuccessfullyDeleted": "刪除成功!",
+    // enum
+    "Enum:BookType.0": "未定義",
+    "Enum:BookType.1": "冒險",
+    "Enum:BookType.2": "生物",
+    "Enum:BookType.3": "Dystopia",
+    "Enum:BookType.4": "科幻",
+    "Enum:BookType.5": "Horror",
+    "Enum:BookType.6": "科學",
+    "Enum:BookType.7": "Science fiction",
+    "Enum:BookType.8": "詩文"
   }
-  }
+}
